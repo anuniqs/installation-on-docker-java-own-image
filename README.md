@@ -1,5 +1,5 @@
 
-#### Getting Java by Creating own image,
+### Getting Java by Creating own image,
 
 **Creating Ubuntu machine using Dockerfile,**
 
