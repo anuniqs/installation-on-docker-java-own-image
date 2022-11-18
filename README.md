@@ -54,6 +54,8 @@
     ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-11.0.17.0.7-0.2.ea.el9.x86_64/
     RUN export JAVA_HOME
 
+`[anup@c9-251-docker ~]$ docker build -t javaltst-centosmachine .`
+
 `[anup@c9-251-docker ~]$ docker run -it javaltst-centosmachine bash`
 
 `[root@04b0b9df693d /]# java -version`
