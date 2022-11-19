@@ -43,13 +43,13 @@
 `[anup@c9-251-docker ~]$ nano Dockerfile`
 
     FROM centos
-    
+
     RUN cd /etc/yum.repos.d/
     RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
-    RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.rep>
+    RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
     RUN yum -y update
     RUN yum -y install java-11-openjdk-devel
-    
+
     # Setup JAVA_HOME -- useful for docker commandline
     ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-11.0.17.0.7-0.2.ea.el9.x86_64/
     RUN export JAVA_HOME
